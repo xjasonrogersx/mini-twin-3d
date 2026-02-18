@@ -1,0 +1,273 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "normalized": false,
+      "count": 10545,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 4724,
+      "type": "VEC3",
+      "max": [
+        20.89519691467285,
+        23.79311180114746,
+        21.829883575439453
+      ],
+      "min": [
+        -14.602914810180664,
+        -23.85919761657715,
+        -10.18269157409668
+      ]
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 4724,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "normalized": false,
+      "count": 648,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 315,
+      "type": "VEC3",
+      "max": [
+        18.601476669311523,
+        23.79311180114746,
+        17.724206924438477
+      ],
+      "min": [
+        -12.204095840454102,
+        -23.85919761657715,
+        -8.69674015045166
+      ]
+    },
+    {
+      "bufferView": 5,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 315,
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "generator": "pygltflib@v1.16.4",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 21092,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21092,
+      "byteLength": 56688,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 77780,
+      "byteLength": 37792,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 115572,
+      "byteLength": 1296,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 116868,
+      "byteLength": 3780,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 120648,
+      "byteLength": 2520,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 123168,
+      "byteLength": 33060
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 156228,
+      "byteLength": 2816
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "e291f2784ca3_52.bin",
+      "byteLength": 159044
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_unlit"
+  ],
+  "extensionsRequired": [
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "bufferView": 6
+    },
+    {
+      "mimeType": "image/jpeg",
+      "bufferView": 7
+    }
+  ],
+  "materials": [
+    {
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 1.0,
+        "roughnessFactor": 1.0,
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        }
+      },
+      "emissiveFactor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": false
+    },
+    {
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 1.0,
+        "roughnessFactor": 1.0,
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        }
+      },
+      "emissiveFactor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 0,
+          "mode": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "TEXCOORD_0": 5
+          },
+          "indices": 3,
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "matrix": [
+        0.008143752539076368,
+        0.619140044956667,
+        0.785238361279961,
+        0.0,
+        0.9999668390974684,
+        -0.005042290520064185,
+        -0.00639499896239113,
+        0.0,
+        0.0,
+        0.785264401356236,
+        -0.6191605768802083,
+        0.0,
+        -92.628898282894,
+        -12.5293822022972,
+        5.371622671047093,
+        1.0
+      ]
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 33071,
+      "wrapT": 33071
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
