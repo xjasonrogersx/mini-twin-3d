@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://ya43yelierxg" path="res://level.gd" id="1_0b4ue"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://dyveef00eakcu" path="res://person/scene.gltf" id="3_0b4ue"]
-[ext_resource type="PackedScene" uid="uid://8c8rsfufqwyb" path="res://street.tscn" id="3_oi3di"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5xgho"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -37,4 +36,4 @@ environment = SubResource("Environment_vonw3")
 [node name="Sketchfab_Scene" parent="." unique_id=1664480359 instance=ExtResource("3_0b4ue")]
 transform = Transform3D(0.99950594, -0.018513804, 0.025420103, 0.018785391, 0.99976915, -0.010486917, -0.02522008, 0.010959242, 0.9996224, 1.7110204, -0.6445338, -16.249104)
 
-[node name="Street" parent="." unique_id=981570835 instance=ExtResource("3_oi3di")]
+[node name="World" type="Node3D" parent="." unique_id=19273468]

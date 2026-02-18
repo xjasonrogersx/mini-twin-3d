@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cpte461hg0tc5"
-path="res://.godot/imported/fce41ff62f8a_4.gltf-7777a62bfccc5bdde94632170aa71791.scn"
+uid="uid://cjkevb0ygquw0"
+path="res://.godot/imported/fce41ff62f8a_3-col.gltf-9bc129562c946a34858ff707d8b3463b.scn"
 
 [deps]
 
-source_file="res://fce41ff62f8a_gltf/fce41ff62f8a_4.gltf"
-dest_files=["res://.godot/imported/fce41ff62f8a_4.gltf-7777a62bfccc5bdde94632170aa71791.scn"]
+source_file="res://fce41ff62f8a_gltf/fce41ff62f8a_3-col.gltf"
+dest_files=["res://.godot/imported/fce41ff62f8a_3-col.gltf-9bc129562c946a34858ff707d8b3463b.scn"]
 
 [params]
 
@@ -37,12 +37,6 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"nodes": {
-"PATH:Mesh": {
-"generate/physics": true
-}
-}
-}
+_subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
