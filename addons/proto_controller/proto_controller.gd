@@ -44,6 +44,10 @@ extends CharacterBody3D
 ## Name of Input Action to toggle freefly mode.
 @export var input_freefly : String = "freefly"
 
+## CAMERA TOGGLE SETTINGS
+var camera_1 : Camera3D = $Head/Camera3D
+var camera_2 : Camera3D = $Node3D/gta
+
 var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
@@ -75,6 +79,15 @@ func _unhandled_input(event: InputEvent) -> void:
 			enable_freefly()
 		else:
 			disable_freefly()
+	
+	# --- ADD THIS: CAMERA TOGGLE LOGIC ---
+	if Input.is_action_just_pressed("ui_home"):
+		print("Home")
+		#if $Node3D/gta.current == true:
+		#	$Head/Camera3D.make_current()
+		#else:
+		#	$Head/Camera3D.make_current()
+		$Node3D/gta.current = !$Node3D/gta.current	
 
 func _physics_process(delta: float) -> void:
 	# If freeflying, handle freefly and nothing else
@@ -102,18 +115,34 @@ func _physics_process(delta: float) -> void:
 		move_speed = base_speed
 
 	# Apply desired movement to velocity
+# Apply desired movement to velocity
 	if can_move:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
-		var move_dir := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		
+		# 1. MOVEMENT CALCULATION (Forward/Back only)
+		var move_dir := (transform.basis * Vector3(0, 0, input_dir.y)).normalized()
+		
 		if move_dir:
 			velocity.x = move_dir.x * move_speed
 			velocity.z = move_dir.z * move_speed
+			
+			# 2. STEER ONLY WHEN MOVING
+			# We check if input_dir.y is not zero (meaning we are pressing Up or Down)
+			if input_dir.y != 0:
+				# If moving backward (input_dir.y > 0), we invert steering 
+				# so it feels natural, like a car reversing.
+				var steer_direction = -input_dir.x
+				if input_dir.y > 0: 
+					steer_direction = input_dir.x
+				
+				rotate_y(steer_direction * look_speed * 10)
 		else:
+			# Friction/Deceleration when no movement input is provided
 			velocity.x = move_toward(velocity.x, 0, move_speed)
 			velocity.z = move_toward(velocity.z, 0, move_speed)
 	else:
 		velocity.x = 0
-		velocity.y = 0
+		velocity.z = 0
 	
 	# Use velocity to actually move
 	move_and_slide()
