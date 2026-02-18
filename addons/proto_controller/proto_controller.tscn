@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
+
+[ext_resource type="Script" uid="uid://c7qu231a4fujn" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="PackedScene" uid="uid://dp77p4v8oycoh" path="res://107/scene.gltf" id="2_wr06p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5hfox"]
+size = Vector3(1.5424957, 1, 3.2645874)
+
+[node name="ProtoController" type="CharacterBody3D" unique_id=759376810]
+script = ExtResource("1_ucva2")
+
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=904907058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029197693, 0.72615373, -0.9493103)
+shape = SubResource("BoxShape3D_5hfox")
+
+[node name="Head" type="Node3D" parent="." unique_id=207659685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=1851724998]
+transform = Transform3D(0.9992139, -0.0059933765, 0.039188538, -0.0049515767, 0.9618982, 0.2733632, -0.039333757, -0.27334237, 0.9611124, 0.012999773, 0.35335565, 2.0874684)
+
+[node name="Sketchfab_Scene" parent="." unique_id=286596204 instance=ExtResource("2_wr06p")]
+transform = Transform3D(-0.99998146, 0, 0.006091231, 0, 1, 0, -0.006091231, 0, -0.99998146, -0.0047012568, -0.08953643, -0.65683424)

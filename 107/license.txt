@@ -1,0 +1,11 @@
+Model Information:
+* title:	Peugeot 107 2005-2014
+* source:	https://sketchfab.com/3d-models/peugeot-107-2005-2014-9c6182e158ee45fda09e5bb138858042
+* author:	DEMON_SCARY1235 (https://sketchfab.com/szymonpasterczyk734)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Peugeot 107 2005-2014" (https://sketchfab.com/3d-models/peugeot-107-2005-2014-9c6182e158ee45fda09e5bb138858042) by DEMON_SCARY1235 (https://sketchfab.com/szymonpasterczyk734) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

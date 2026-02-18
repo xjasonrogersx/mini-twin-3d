@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dy64ekbbgyhp8"]
+
+[ext_resource type="Script" uid="uid://ya43yelierxg" path="res://level.gd" id="1_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://dyveef00eakcu" path="res://person/scene.gltf" id="3_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://8c8rsfufqwyb" path="res://street.tscn" id="3_oi3di"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5xgho"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_u52ul"]
+sky_material = SubResource("ProceduralSkyMaterial_5xgho")
+
+[sub_resource type="Environment" id="Environment_vonw3"]
+background_mode = 2
+sky = SubResource("Sky_u52ul")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Main" type="Node3D" unique_id=1037240324]
+transform = Transform3D(0.9995054, 0.018785385, -0.025220051, -0.018513793, 0.9997685, 0.01095925, 0.025420092, -0.010486896, 0.99962187, 0, 0, 0)
+script = ExtResource("1_0b4ue")
+
+[node name="ProtoController" parent="." unique_id=413758652 instance=ExtResource("1_u52ul")]
+transform = Transform3D(0.9993198, -0.020436209, 0.03074901, 0.020772278, 0.9997293, -0.010649381, -0.03052303, 0.011280837, 0.9994721, 2.6888838, -0.22873533, 2.3098123)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=321319076]
+transform = Transform3D(-0.86602545, -0.43301278, 0.24999999, -4.656613e-10, 0.5, 0.86602557, -0.5000001, 0.7500001, -0.4330127, 0, 0, 0)
+light_color = Color(1, 1, 0.27450982, 1)
+light_energy = 0.6
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=917016409]
+environment = SubResource("Environment_vonw3")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1664480359 instance=ExtResource("3_0b4ue")]
+transform = Transform3D(0.99950594, -0.018513804, 0.025420103, 0.018785391, 0.99976915, -0.010486917, -0.02522008, 0.010959242, 0.9996224, 1.7110204, -0.6445338, -16.249104)
+
+[node name="Street" parent="." unique_id=981570835 instance=ExtResource("3_oi3di")]

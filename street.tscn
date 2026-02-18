@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://8c8rsfufqwyb"]
+
+[ext_resource type="PackedScene" uid="uid://bq85rvdqce5aq" path="res://fce41ff62f8a_gltf/fce41ff62f8a_1.gltf" id="1_yp6et"]
+[ext_resource type="PackedScene" uid="uid://be5huyka0enk6" path="res://fce41ff62f8a_gltf/fce41ff62f8a_2.gltf" id="2_xf031"]
+[ext_resource type="PackedScene" uid="uid://b75t7hlyi3mwf" path="res://fce41ff62f8a_gltf/fce41ff62f8a_3.gltf" id="3_hjkjg"]
+[ext_resource type="PackedScene" uid="uid://cpte461hg0tc5" path="res://fce41ff62f8a_gltf/fce41ff62f8a_4.gltf" id="4_jg0bl"]
+[ext_resource type="PackedScene" uid="uid://buoymphaqn2y3" path="res://fce41ff62f8a_gltf/fce41ff62f8a_5.gltf" id="5_advhn"]
+[ext_resource type="PackedScene" uid="uid://bccfmvdfxgr6v" path="res://fce41ff62f8a_gltf/fce41ff62f8a_6.gltf" id="6_pkm3t"]
+[ext_resource type="PackedScene" uid="uid://dwhu6mo2jgkt7" path="res://fce41ff62f8a_gltf/fce41ff62f8a_7.gltf" id="7_rcl57"]
+[ext_resource type="PackedScene" uid="uid://bwogljxj3yvoa" path="res://fce41ff62f8a_gltf/fce41ff62f8a_8.gltf" id="8_uk5kx"]
+
+[node name="Street" type="Node3D" unique_id=981570835]
+
+[node name="fce41ff62f8a_1" parent="." unique_id=785231025 instance=ExtResource("1_yp6et")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
+
+[node name="fce41ff62f8a_2" parent="." unique_id=1626175849 instance=ExtResource("2_xf031")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
+
+[node name="fce41ff62f8a_3" parent="." unique_id=627629230 instance=ExtResource("3_hjkjg")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
+
+[node name="fce41ff62f8a_4" parent="." unique_id=1232740618 instance=ExtResource("4_jg0bl")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
+
+[node name="fce41ff62f8a_5" parent="." unique_id=1698992344 instance=ExtResource("5_advhn")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
+
+[node name="fce41ff62f8a_6" parent="." unique_id=1812010386 instance=ExtResource("6_pkm3t")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
+
+[node name="fce41ff62f8a_7" parent="." unique_id=437522841 instance=ExtResource("7_rcl57")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
+
+[node name="fce41ff62f8a_8" parent="." unique_id=160055858 instance=ExtResource("8_uk5kx")]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8811928, 0, 1.2063854)
